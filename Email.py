@@ -1,12 +1,12 @@
 import smtplib
  
 # list of email_id to send the mail
-li = ["ps90046@gmail.com", "dwivedianu01@gmail.com"]
+li = ["py1@gmail.com", "xyz1@gmail.com"]
  
 for dest in li:
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("dwivedijavaarchitect1983@gmail.com", "Sid!linux1981")
+    s.login("xyz@gmail.com", "password")
     message = "Python, Welcomes you....."
-    s.sendmail("dwivedianu01@gmail.com", dest, message)
+    s.sendmail("xyz1@gmail.com", dest, message)
     s.quit()

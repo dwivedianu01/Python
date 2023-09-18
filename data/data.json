@@ -1,0 +1,24 @@
+{
+    "employees": [
+        {
+            "name": "Anupam",
+            "emp_id": "435678",
+            "address": "Lane1, Chennai"
+        },
+        {
+            "name": "Sid",
+            "emp_id": "437890",
+            "address": "Lane1, New Delhi"
+        },
+        {
+            "name": "Ram",
+            "emp_id": "512345",
+            "address": "Lane1, Jhansi"
+        },
+        {
+            "name": "salman",
+            "emp_id": 534562,
+            "address": "Lane 3, Chandigarh"
+        }
+    ]
+}

@@ -1,15 +1,15 @@
 import http.client
 import json
 
-conn = http.client.HTTPSConnection("devtools-test.dhl.com", )
+conn = http.client.HTTPSConnection("api-test.dhl.com", )
 payload = json.dumps({
-  "approverId": "dpfeffer",
+  "approverId": "user1",
   "extRequestRef": "RITM4403921",
-  "requesterId": "anupamdw",
+  "requesterId": "anupam",
   "subscriberId": "12063010"
 })
 headers = {
-  'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwibGRhcCI6IkFOVVBBTURXIiwiZW1haWwiOiJhbnVwYW0uZHdpdmVkaUBkaGwuY29tIiwiYXV0aE1ldGhvZCI6IlRPS0VOIiwiaWF0IjoxNjc1MzE1OTIxLCJleHAiOjIwMzMxMTQ3MjF9.2iloiJ5g30FY5UgsNcrl5i_CO2Y-JEybqLaCcsE9GeA',
+  'Authorization': 'Bearer <id>',
   'Content-Type': 'application/json'
 }
 conn.request("POST", "/api/service/tool/jira/1/user/subscribe", payload, headers)
