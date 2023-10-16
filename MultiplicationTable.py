@@ -1,6 +1,3 @@
-import pyodbc 
-
-
 number = int(input(" Please Enter any number less than 10 : "))
 
 print(" Multiplication Table ")

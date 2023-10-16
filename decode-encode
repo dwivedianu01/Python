@@ -1,0 +1,10 @@
+import base64
+
+# Encode text to base64
+text = "dhl123"
+encoded_text = base64.b64encode(text.encode()).decode()
+print("Encoded Text:", encoded_text)
+
+# Decode base64 to text
+decoded_text = base64.b64decode(encoded_text.encode()).decode()
+print("Decoded Text:", decoded_text)
